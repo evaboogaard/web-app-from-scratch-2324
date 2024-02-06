@@ -34,19 +34,6 @@ we denken dat een verbetering zijn op het criterium.
 
 TBA
 
-## Teams
-| Team              | Thema         | Leden                                   | Data                                                |
-|-------------------|---------------|-----------------------------------------|-----------------------------------------------------|
-| Eendjes           | Eendjes       | Kevin, Quinten, Justin, Lars            | Alles is eenden gerelateerd, favo vijver            |
-|                   | Koken         | Katarina, Raul, Lisa, Jurien            | 2 leugens - 1 waarheid, skills, ontbijt, schermtijd |
-| Deck of devs      | Playing cards | Niels, Ali, Ufuk, Sena                  | Avatar, About me, Socials, Spotify solo & team      |
-| Number Ones       | Games         | Brianne, Elaine, Rose, Ruud             | Favo games, genre, biome                            |
-|                   | Pokemon       | Eva, Manoah, Nesli, Laura, Yeliz        | Skills, zwaktes, favo pokemon                       |
-|                   | Reizen        | Joppe, Eefje, Jop, Lynn                 | Recepten                                            |
-|                   | Huisdieren    | Stephan, Nicole, Stef, Mitchel          | Eigen huisdier, favo dieren                         |
-|                   | Muziek        | Karenza, Xiao Nan, Max, Hidde           | Emojis, top genres, top artiesten                   |
-| Heroes & Villains | Films         | Tristan, Bart, Ferhat, Klaudia, Martijn | Favo films, favo acteurs, genres, karakters         |
-
 [//]: # ()
 [//]: # (| Deficiency | Criterion                                                                                                                                                                              | Improvement |)
 

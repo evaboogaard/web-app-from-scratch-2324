@@ -1,0 +1,33 @@
+{
+    "avatar": "https://evaboogaard.github.io/web-app-from-scratch-2324/img/paspoort_1.jpg",
+    "name": "Eva",
+    "age": 24,
+    "favoritePokemon": "Piplup",
+    "favoritePokemonAvatar": "https",
+    "description": "This is me.",
+    "stats": [
+        { "title": "HTML", "value": 60 },
+        { "title": "CSS", "value": 80 },
+        { "title": "JavaScript", "value": 30 },
+        { "title": "Design", "value": 75 },
+        { "title": "Git", "value": 30 }
+    ],
+    "strengths": [
+        "Creativity",
+        "Problem-solving",
+        "Teamwork",
+        "Adaptability",
+        "Leadership"
+    ],
+    "weaknesses": ["Imposter syndrome", "Stress"],
+    "habitat": [
+        { "title": "Home", "value": "Amsterdam ZO" },
+        { "title": "GitHub", "value": "https://github.com/evaboogaard" },
+        {
+            "title": "LinkedIn",
+            "value": "https://www.linkedin.com/in/eva-boogaard-219791174/"
+        },
+        { "title": "Twitter", "value": "https" },
+        { "title": "Instagram", "value": "https" }
+    ]
+}

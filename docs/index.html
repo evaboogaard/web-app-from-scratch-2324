@@ -1,37 +1,99 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="./styles/index.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..900&display=swap"
-          rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Web App From Scratch 23-24</title>
+    </head>
+    <body>
+        <!-- <h1>
+            Welcome,
+            <div class="name"></div>
+            !
+        </h1> -->
 
-    <title>Web App From Scratch 23-24</title>
-</head>
-<body>
-<header class="content-grid">
-    <img src="./logo-minor.svg" role="presentation" alt="" width="80px"/>
-    <h1>
-        <span>Web App From Scratch</span>
-        <span>2023 / 2024</span>
-    </h1>
-</header>
-<main class="content-grid">
-    <h2>Teams</h2>
-    <section data-students class="full-width">
+        <!-- ALBUMS -->
+        <section class="albums">
+            <section class="controls">
+                <button class="up"></button>
+                <button class="down"></button>
+            </section>
+            <ul>
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+                <li><img src="" alt="" /></li>
+            </ul>
+        </section>
 
-    </section>
-    <footer>
-        <p>© 2023 / 2024</p>
-        <p>License: MIT</p>
-    </footer>
-</main>
-<script src="scripts/index.js" async type="application/javascript"></script>
-</body>
+        <!-- MUSIC INFO -->
+        <section class="nowplaying">
+            <h2 class="title"></h2>
+            <h3 class="artist"></h3>
+            <h4 class="year"></h4>
+        </section>
+
+        <!-- TABLE -->
+        <section class="table">
+            <!-- RECORD PLAYER -->
+            <section class="recordplayer"></section>
+
+            <button class="passport-button">
+                <p>
+                    EUROPESE UNIE <br />
+                    KONINKRIJK DER NEDERLANDEN
+                </p>
+                PASPOORT
+                <img src="img/paspoort-button.png" alt="" />
+            </button>
+            <button class="weeklynerd-button"></button>
+        </section>
+
+        <!-- PASSPORT -->
+        <section class="passport-content">
+            <img class="avatar" src="" alt="" />
+            <ul>
+                <li>
+                    <h3>Name</h3>
+                    <p class="name"></p>
+                </li>
+                <li>
+                    <h3>Age</h3>
+                    <p class="age"></p>
+                </li>
+                <li>
+                    <h3>Personality</h3>
+                    <p class="description"></p>
+                </li>
+                <li>
+                    <h3>Skills</h3>
+                    <p class="stats"></p>
+                </li>
+                <li>
+                    <h3>Strengths</h3>
+                    <p class="strengths"></p>
+                </li>
+                <li>
+                    <h3>Weaknesses</h3>
+                    <p class="weaknesses"></p>
+                </li>
+                <li>
+                    <h3>Habitat</h3>
+                    <p class="habitat"></p>
+                </li>
+                <li></li>
+            </ul>
+        </section>
+
+        <!-- WEEKLY NERD -->
+        <section class="weeklynerd-content"></section>
+    </body>
+
+    <script type="module" src="./main.js"></script>
 </html>
