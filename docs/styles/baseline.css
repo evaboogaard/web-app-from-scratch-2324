@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #a6a6a6;
+
+    --wood-color: #4a3516;
+
+    --passport-color: #8b1414;
+    --passport-color-dark: #640d0d;
+    --passport-color-text: #f4c900;
+
+    --record-player-color: #5d5c5e;
+    --record-player-light-color: #9f9fa1;
+    --record-player-dark-color: #3b3b3b;
+    --record-player-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.794);
+
+    --transition-base: 0.5s ease-out;
+}
+
+body {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+h1 {
+    position: absolute;
+    left: 10rem;
+}
+
+ul {
+    list-style: none;
+}
+
+div {
+    display: inline;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+button {
+    font-family: monospace;
+}

@@ -1,0 +1,12 @@
+/* https://www.transparenttextures.com/wood-pattern.html */
+
+.table {
+    background-color: var(--wood-color);
+    background-image: url(http://www.transparenttextures.com/patterns/wood-pattern.png);
+    height: 80vh;
+    width: 60vw;
+    right: -10vw;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0.2rem;
+}

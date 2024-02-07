@@ -1,0 +1,107 @@
+.albums {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: absolute;
+    margin-left: 10%;
+}
+
+.albums .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.albums .controls button {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    transition: var(--transition-base);
+}
+
+.albums .controls button:first-of-type::before,
+.albums .controls button:first-of-type::after,
+.albums .controls button:last-of-type::before,
+.albums .controls button:last-of-type::after {
+    content: '';
+    background-color: black;
+    width: 70%;
+    height: 0.11rem;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.albums .controls button:first-of-type::before {
+    right: -0.16rem;
+    transform: rotate(45deg);
+}
+
+.albums .controls button:first-of-type::after {
+    left: -0.16rem;
+    transform: rotate(-45deg);
+}
+
+.albums .controls button:last-of-type::before {
+    right: -0.16rem;
+    transform: rotate(315deg);
+}
+
+.albums .controls button:last-of-type::after {
+    left: -0.16rem;
+    transform: rotate(-315deg);
+}
+
+/* HOVER STATES */
+
+.albums .controls button:first-of-type:hover {
+    transform: translateY(-0.2rem);
+}
+
+.albums .controls button:last-of-type:hover {
+    transform: translateY(0.2rem);
+}
+
+.albums ul {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25vh;
+    transition: scroll 0.5s ease-in-out;
+}
+
+.albums ul li {
+    height: 50vh;
+}
+
+.albums ul li:first-of-type {
+    margin-top: 25vh;
+}
+
+.albums ul li:last-of-type {
+    margin-bottom: 25vh;
+}
+
+.albums ul img {
+    width: 50vh;
+    border-radius: 0.5rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.albums ul li:nth-of-type(1) img {
+    filter: grayscale(0);
+}
+.albums ul li:nth-of-type(2) img {
+    filter: grayscale(0.2);
+}
+.albums ul li:nth-of-type(3) img {
+    filter: grayscale(0.4);
+}
+.albums ul li:nth-of-type(4) img {
+    filter: grayscale(0.6);
+}
+.albums ul li:nth-of-type(5) img {
+    filter: grayscale(0.8);
+}

@@ -4,7 +4,7 @@
     "age": 24,
     "favoritePokemon": "Piplup",
     "favoritePokemonAvatar": "https",
-    "description": "This is me.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit velit vitae odio venenatis iaculis non a urna. Aenean sed cursus orci, id dignissim tortor. Nunc pulvinar lacus eget dui mollis pharetra. Ut mauris felis, luctus non facilisis eu, convallis ac ipsum. Proin in maximus est. Nullam in feugiat est. Curabitur tempus, nibh sit amet sagittis vulputate, leo nibh gravida est, eu dapibus justo enim at nunc.",
     "stats": [
         { "title": "HTML", "value": 60 },
         { "title": "CSS", "value": 80 },

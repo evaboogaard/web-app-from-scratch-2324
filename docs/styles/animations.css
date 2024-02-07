@@ -1,0 +1,19 @@
+@keyframes vinyl-record-playing {
+    100% {
+        rotate: 1turn;
+    }
+}
+
+@keyframes record-arm-playing {
+    0% {
+        rotate: -3deg;
+    }
+
+    2% {
+        rotate: 34deg;
+    }
+
+    100% {
+        rotate: 60deg;
+    }
+}

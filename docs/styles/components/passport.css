@@ -1,0 +1,88 @@
+/* PASSPORT BUTTON */
+
+.passport-button {
+    position: absolute;
+    background-color: var(--passport-color);
+    border-left: 0.5rem solid var(--passport-color-dark);
+    width: 5rem;
+    bottom: 5rem;
+    left: 5rem;
+    transform: rotate(-20deg);
+    aspect-ratio: 1/1.3;
+    border-radius: 0 0.5rem 0.5rem 0;
+    box-shadow: -0.2rem 0.2rem 0.3rem rgba(2, 14, 41, 0.459);
+    color: var(--passport-color-text);
+    font-size: 0.5rem;
+    transition: var(--transition-base);
+}
+
+.passport-button:hover {
+    transform: rotate(-20deg) translateY(-0.3rem);
+    box-shadow: 0rem 0rem 0.5rem rgba(255, 240, 197, 0.659);
+}
+
+.passport-button img {
+    width: 80%;
+}
+
+.passport-button p {
+    color: var(--passport-color-text);
+    font-size: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* PASSPORT CONTENT */
+
+.passport-content {
+    display: none;
+
+    position: absolute;
+    background-color: white;
+    width: 50vw;
+    aspect-ratio: 1.5/1;
+    padding: 2rem;
+    left: 25vw;
+    top: 17.5vh;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.passport-content.visible {
+    display: block;
+}
+
+.passport-content .container {
+    display: flex;
+    gap: 1rem;
+}
+
+.passport-content .container section {
+    width: 50%;
+}
+
+/* .passport-content .container section:first-of-type div:first-of-type h3,
+.passport-content .container section:first-of-type div:first-of-type p,
+.passport-content .container section:first-of-type div:nth-of-type(2) p,
+.passport-content .container section:first-of-type div:nth-of-type(2) h3 {
+    margin-left: 3rem;
+} */
+.passport-content .container section:first-of-type div:first-of-type,
+.passport-content .container section:first-of-type div:nth-of-type(2) {
+    position: absolute;
+    left: 8rem;
+}
+
+.passport-content .container section:first-of-type div:first-of-type {
+    top: 3rem;
+}
+.passport-content .container section:first-of-type div:nth-of-type(2) {
+    top: 6rem;
+}
+
+.passport-content img {
+    width: 6rem;
+}
+
+.passport-content .skills {
+    position: absolute;
+    top: 3rem;
+}
