@@ -105,3 +105,9 @@
 .albums ul li:nth-of-type(5) img {
     filter: grayscale(0.8);
 }
+
+.album-title {
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+}

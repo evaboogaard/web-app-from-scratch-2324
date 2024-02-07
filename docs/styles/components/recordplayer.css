@@ -26,6 +26,11 @@
     left: 1.5rem;
     background-color: black;
     box-shadow: var(--record-player-box-shadow);
+    transition: var(--transition-base);
+}
+
+.recordplayer .vinyl:hover {
+    box-shadow: var(--hover-box-shadow);
 }
 
 .recordplayer .vinyl div {

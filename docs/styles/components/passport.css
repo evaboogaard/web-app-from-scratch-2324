@@ -18,7 +18,7 @@
 
 .passport-button:hover {
     transform: rotate(-20deg) translateY(-0.3rem);
-    box-shadow: 0rem 0rem 0.5rem rgba(255, 240, 197, 0.659);
+    box-shadow: var(--hover-box-shadow);
 }
 
 .passport-button img {
@@ -35,7 +35,7 @@
 
 .passport-content {
     display: none;
-
+    z-index: 1000;
     position: absolute;
     background-color: white;
     width: 50vw;

@@ -19,6 +19,8 @@
     --record-player-box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.794);
 
     --transition-base: 0.5s ease-out;
+
+    --hover-box-shadow: 0rem 0rem 0.5rem rgba(255, 240, 197, 0.659);
 }
 
 body {
