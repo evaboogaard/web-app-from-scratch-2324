@@ -116,6 +116,31 @@
     border-radius: 0.2rem;
 }
 
+.recordplayer fieldset {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 2.25rem;
+    border: none;
+    gap: 0.25rem;
+}
+
+.recordplayer fieldset .button-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.recordplayer fieldset label {
+    font-size: 0.5rem;
+    color: var(--notebook-color);
+}
+
+#33[type='radio']:checked + label {
+    background-color: coral;
+}
+
 /*
 ###############
           PLAYING STATE

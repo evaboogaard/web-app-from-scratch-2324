@@ -12,6 +12,7 @@
     top: 23rem;
     transform: rotate(-10deg);
     transition: var(--transition-base);
+    box-shadow: -0.2rem 0.2rem 0.3rem rgba(2, 14, 41, 0.459);
 }
 
 @media (min-width: 800px) {

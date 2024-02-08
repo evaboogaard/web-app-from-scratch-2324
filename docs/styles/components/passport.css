@@ -41,7 +41,7 @@
 /* PASSPORT CONTENT */
 
 .passport-content {
-    display: none;
+    /* display: none; */
     z-index: 1000;
     position: absolute;
     background-color: white;
@@ -53,6 +53,8 @@
     border-radius: 0.5rem 0.5rem 0 0;
     outline: 1rem solid var(--passport-color);
     overflow: scroll;
+    transform: translateY(100vh);
+    /* transition: 1s ease-out; */
 }
 
 @media (min-width: 800px) {
@@ -70,7 +72,8 @@
 }
 
 .passport-content.visible {
-    display: block;
+    /* display: block; */
+    transform: none;
 }
 
 .passport-content .container {
@@ -108,7 +111,6 @@
 @media (min-width: 800px) {
     .passport-content img {
         width: 10vw;
-
         position: static;
     }
 
@@ -120,7 +122,7 @@
     .passport-content .container div:first-of-type section:first-of-type,
     .passport-content .container div:first-of-type section:nth-of-type(2) {
         position: absolute;
-        left: 13vw;
+        left: 15vw;
     }
 
     .passport-content .container div:first-of-type section:first-of-type {
@@ -131,16 +133,23 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .passport-content .container div:first-of-type section:first-of-type,
+    .passport-content .container div:first-of-type section:nth-of-type(2) {
+        left: 13vw;
+    }
+}
+
 /* svg animation autograph */
 
-svg {
+.passport-content.visible svg {
     width: 10rem;
     position: absolute;
     bottom: 1rem;
     right: 2rem;
 }
 
-.cls-1 {
+.passport-content.visible .cls-1 {
     fill: none;
     stroke: black;
     stroke-width: 2;
@@ -157,9 +166,10 @@ svg {
     }
 }
 
-#e1 path,
-#e2 path,
-#e3 path,
-#va path {
+.passport-content.visible #e1 path,
+.passport-content.visible #e2 path,
+.passport-content.visible #e3 path,
+.passport-content.visible #va path {
     animation: draw 5s ease forwards;
+    animation-delay: 0.5s;
 }

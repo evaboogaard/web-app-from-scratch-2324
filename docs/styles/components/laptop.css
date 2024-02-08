@@ -5,7 +5,9 @@
     aspect-ratio: 1.5/1;
     position: absolute;
     border-radius: 0.4rem;
-    box-shadow: inset -0.4rem -0.3rem 0 rgba(0, 0, 0, 0.242);
+    box-shadow:
+        inset -0.4rem -0.3rem 0 rgba(0, 0, 0, 0.242),
+        0.2rem -0.2rem 0.3rem rgba(2, 14, 41, 0.459);
     left: 25vw;
     top: 27.5rem;
     transform: rotate(200deg);
@@ -47,9 +49,172 @@
 
 /* LAPTOP CONTENT */
 
-/* .laptop-content .screen {
-    width: 90vw;
-    aspect-ratio: 1 /1.5;
-    background-color: white;
-    z-index: 2000;
+.laptop-content {
+    display: none;
+}
+
+.laptop-content.visible {
+    display: block;
+}
+
+.laptop-content .screen {
+    position: absolute;
+    z-index: 300;
+    width: 80vw;
+    aspect-ratio: 1.9/1;
+    left: 10vw;
+    top: 10vh;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+    border-left: 2rem solid black;
+    border-top: 2rem solid black;
+    border-right: 2rem solid black;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.laptop-content .screen .topbar {
+    height: 3vh;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.laptop-content .screen .topbar .red,
+.laptop-content .screen .topbar .orange,
+.laptop-content .screen .topbar .green {
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.laptop-content .screen .topbar .red {
+    background-color: red;
+    margin-left: 0.5rem;
+}
+
+.laptop-content .screen .topbar .orange {
+    background-color: orange;
+}
+
+.laptop-content .screen .topbar .green {
+    background-color: greenyellow;
+}
+
+.laptop-content .screen .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.laptop-content .screen .header img {
+    width: 6%;
+}
+
+.laptop-content .screen .header img:last-of-type {
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+}
+
+.laptop-content .screen .projects {
+    display: flex;
+    position: absolute;
+    bottom: -3rem;
+    width: 100%;
+}
+
+.laptop-content .screen .projects a,
+.laptop-content .screen .projects a img {
+    width: 100%;
+}
+/* 
+.mockup {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-size: 0;
+    perspective: 2400px;
+    perspective-origin: 50% 100%;
+    opacity: 0;
+    transition: 500ms opacity;
+}
+
+.mockup.loaded {
+    opacity: 1;
+}
+
+.mockup .part .top,
+.mockup .part .bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mockup .part.top {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup:hover .part.top {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+.mockup .part {
+    display: inline-block;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform-origin: 50% 100%;
+    transition: 900ms;
+}
+
+.mockup.opened .part .top {
+    transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+}
+
+.mockup .part .top {
+    transform-origin: 50% 0;
+    transform: translate3d(0, 0, -11px) rotateX(90deg);
+    transition: 900ms;
+}
+
+.mockup img {
+    display: block;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.mockup .part .cover {
+    position: relative;
+}
+
+.mockup .laptop-content {
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    width: 92%;
+    border-radius: 6px;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 1px);
+}
+
+.mockup .part.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup .part .bottom {
+    transform-origin: 50% 0;
+    transform: translate3d(0, 0, 0) rotateX(90deg);
 } */

@@ -11,11 +11,7 @@
         <title>Web App From Scratch 23-24</title>
     </head>
     <body>
-        <!-- <h1>
-            Welcome,
-            <div class="name"></div>
-            !
-        </h1> -->
+        <!-- <h1>welcome!!!</h1> -->
         <!-- ALBUMS -->
         <div class="albums">
             <div class="wrapper">
@@ -59,8 +55,21 @@
                     <div class="needle"></div>
                 </section>
 
-                <button class="control"></button>
-                <button class="control"></button>
+                <fieldset>
+                    <legend class="sr-only">Select a spinning speed</legend>
+                    <div class="button-container">
+                        <input type="radio" id="33" value="33" name="speed" />
+                        <label for="33">33 RPM</label>
+                    </div>
+                    <div class="button-container">
+                        <input type="radio" id="45" value="45" name="speed" />
+                        <label for="45">45 RPM</label>
+                    </div>
+                    <div class="button-container">
+                        <input type="radio" id="78" value="78" name="speed" />
+                        <label for="78">78 RPM</label>
+                    </div>
+                </fieldset>
             </section>
 
             <!-- PASSPORT BTN -->
@@ -125,7 +134,11 @@
                     data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 333.66 182.33"
+                    role="img"
+                    aria-labelledby="title desc"
                 >
+                    <title>Autograph</title>
+                    <desc>The name 'Eva' in handwriting.</desc>
                     <g id="e1">
                         <path
                             class="cls-1"
@@ -155,19 +168,66 @@
         </div>
 
         <!-- LAPTOP -->
-        <section class="laptop-content">
-            <section class="macbook-mockup">
-                <div class="part top">
-                    <div class="mb-top"></div>
-                    <div class="mb-cover"></div>
+        <div class="laptop-content">
+            <div class="screen">
+                <div class="topbar">
+                    <div class="red"></div>
+                    <div class="orange"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="part bottom">
-                    <div class="mb-cover"></div>
-                    <div class="mb-bottom"></div>
+                <div class="header">
+                    <img src="./img/gh_svg.svg" alt="github logo" />
+                    <p>Dashboard</p>
+                    <img src="./img/gh-avatar.jpeg" alt="" />
                 </div>
-                <section class="screen"></section>
-            </section>
-        </section>
+                <div class="projects">
+                    <a href="https://evaboogaard.github.io/space-duck/">
+                        <img
+                            src="./img/prj-1.png"
+                            alt="link to website with a pure css animated astronaut duck"
+                        />
+                    </a>
+                    <a href="https://evaboogaard.github.io/FED-1/"
+                        ><img
+                            src="./img/prj-2.png"
+                            alt="link to redesign of the website of the dutch alt rock band 'de staat'"
+                    /></a>
+                    <a href="https://github.com/evaboogaard/portfolio"
+                        ><img src="./img/prj-3.png" alt="link to portfolio"
+                    /></a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            https://codepen.io/designersnest/pen/gOaXPbr?editors=1100
+            
+            <div class="mockup mockup-macbook loaded opened">
+            <div class="part top">
+                <img
+                    src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg"
+                    alt=""
+                    class="top"
+                />
+                <img
+                    src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+                    alt=""
+                    class="cover"
+                />
+            </div>
+            <div class="part bottom">
+                <img
+                    src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg"
+                    alt=""
+                    class="cover"
+                />
+                <img
+                    src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg"
+                    alt=""
+                    class="bottom"
+                />
+            </div>
+        </div> -->
 
         <!-- WEEKLY NERD -->
     </body>
