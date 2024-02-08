@@ -82,7 +82,11 @@
     position: absolute;
     height: 80%;
     width: 0.6rem;
-    background-color: var(--record-player-light-color);
+    background-image: linear-gradient(
+        to right,
+        var(--record-player-light-color),
+        var(--record-player-color)
+    );
     z-index: 200;
     left: 2.2rem;
     top: 2.3rem;

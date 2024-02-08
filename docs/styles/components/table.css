@@ -4,9 +4,30 @@
     background-color: var(--wood-color);
     background-image: url(http://www.transparenttextures.com/patterns/wood-pattern.png);
     height: 80vh;
-    width: 60vw;
-    right: -10vw;
+    width: 100vw;
     bottom: 0;
     position: absolute;
     border-radius: 0.2rem;
+}
+
+@media (min-width: 800px) {
+    .table {
+        height: 80vh;
+        width: 70vw;
+        right: 0;
+    }
+}
+
+@media (min-width: 1400px) {
+    .table {
+        height: 80vh;
+        width: 60vw;
+        right: -10vw;
+    }
+}
+
+@media (min-width: 800px) {
+}
+
+@media (min-width: 1400px) {
 }

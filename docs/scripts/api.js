@@ -4,8 +4,11 @@ const downButton = document.querySelector('.albums .down');
 const carouselItems = document.querySelectorAll('.albums ul li');
 const albumCovers = document.querySelectorAll('.albums img');
 const albumTitle = document.querySelector('.album-title');
+const albumArtist = document.querySelector('.album-artist');
 const artistName = document.querySelector('.artist-name');
 const halfViewportHeight = window.innerHeight / 1.332;
+
+let currentActiveIndex = 0;
 
 const albumsData = [
     'https://www.theaudiodb.com/api/v1/json/2/album.php?m=2109877',
@@ -15,27 +18,13 @@ const albumsData = [
     'https://www.theaudiodb.com/api/v1/json/2/album.php?m=2404242',
 ];
 
-function setActiveItem() {
-    const scrollPosition = carouselContainer.scrollTop;
-    const containerHeight = carouselContainer.clientHeight;
-
-    carouselItems.forEach((item) => {
-        const itemTop = item.offsetTop;
-        const itemHeight = item.clientHeight;
-        const itemBottom = itemTop + itemHeight;
-
-        if (
-            itemTop <= scrollPosition + containerHeight / 2 &&
-            itemBottom >= scrollPosition + containerHeight / 2
-        ) {
-            item.classList.add('active');
-            const index = Array.from(item.parentNode.children).indexOf(item);
-            updateAlbumTitle(index);
-        } else {
-            item.classList.remove('active');
-        }
-    });
-}
+// const audioFiles = [
+//     './audio/pinkfloyd.mp3',
+//     './audio/jeffwayne.mp3',
+//     './audio/prodigy.mp3',
+//     './audio/queen.mp3',
+//     './audio/jockstrap.mp3',
+// ];
 
 function updateAlbumTitle(index) {
     const url = albumsData[index];
@@ -48,6 +37,7 @@ function updateAlbumTitle(index) {
         })
         .then((data) => {
             albumTitle.innerHTML = data.album[0].strAlbumStripped;
+            albumArtist.innerHTML = data.album[0].strArtist;
             artistName.innerHTML = data.album[0].strArtist;
         })
         .catch((error) => {
@@ -55,23 +45,31 @@ function updateAlbumTitle(index) {
         });
 }
 
-carouselContainer.addEventListener('scroll', setActiveItem);
+function setInitialData() {
+    updateAlbumTitle(0); // Assure Pink Floyd is loaded as the first data
+}
 
 upButton.addEventListener('click', () => {
-    carouselContainer.scrollTo({
-        top: carouselContainer.scrollTop - halfViewportHeight,
-        behavior: 'smooth',
-    });
+    if (currentActiveIndex > 0) {
+        currentActiveIndex--;
+        carouselItems[currentActiveIndex].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+        });
+        updateAlbumTitle(currentActiveIndex);
+    }
 });
 
 downButton.addEventListener('click', () => {
-    carouselContainer.scrollTo({
-        top: carouselContainer.scrollTop + halfViewportHeight,
-        behavior: 'smooth',
-    });
+    if (currentActiveIndex < albumsData.length - 1) {
+        currentActiveIndex++;
+        carouselItems[currentActiveIndex].scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+        });
+        updateAlbumTitle(currentActiveIndex);
+    }
 });
-
-setActiveItem();
 
 const fetchData = (url, index) => {
     return fetch(url)
@@ -83,7 +81,6 @@ const fetchData = (url, index) => {
         })
         .then((data) => {
             albumCovers[index].src = data.album[0].strAlbumThumb;
-            albumTitle.innerHTML = data.album[0].strAlbumStripped; // Always update album title
         })
         .catch((error) => {
             console.error('There was a problem fetching the JSON file:', error);
@@ -92,4 +89,5 @@ const fetchData = (url, index) => {
 
 Promise.all(albumsData.map((url, index) => fetchData(url, index))).then(() => {
     console.log('All data loaded successfully');
+    setInitialData();
 });

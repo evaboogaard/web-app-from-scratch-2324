@@ -16,13 +16,20 @@
             <div class="name"></div>
             !
         </h1> -->
-        <h2 class="album-title"></h2>
         <!-- ALBUMS -->
         <section class="albums">
-            <section class="controls">
-                <button class="up"></button>
-                <button class="down"></button>
-            </section>
+            <div class="wrapper">
+                <div class="metadata">
+                    <h2 class="album-title"></h2>
+                    <h3 class="album-artist"></h3>
+                </div>
+
+                <section class="controls">
+                    <button class="up"></button>
+                    <button class="down"></button>
+                </section>
+            </div>
+
             <ul>
                 <li><img src="" alt="" /></li>
                 <li><img src="" alt="" /></li>
@@ -75,7 +82,9 @@
                 <img src="./img/apple_logo.svg" alt="" />
             </button>
 
-            <button class="weeklynerd-button"></button>
+            <button class="weeklynerd-button">
+                <img src="./img/notebook_icon.png" alt="" />
+            </button>
         </section>
 
         <!-- PASSPORT -->
@@ -121,7 +130,16 @@
         <section class="laptop-content"></section>
 
         <!-- WEEKLY NERD -->
-        <section class="weeklynerd-content"></section>
+        <section class="macbook-mockup">
+            <div class="part top">
+                <div class="mb-top"></div>
+                <div class="mb-cover"></div>
+            </div>
+            <div class="part bottom">
+                <div class="mb-cover"></div>
+                <div class="mb-bottom"></div>
+            </div>
+        </section>
     </body>
 
     <script type="module" src="./main.js"></script>
