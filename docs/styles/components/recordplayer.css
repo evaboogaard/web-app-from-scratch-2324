@@ -33,7 +33,7 @@
     box-shadow: var(--hover-box-shadow);
 }
 
-.recordplayer .vinyl div {
+.recordplayer .vinyl .wrapper {
     background-color: var(--primary-color);
     position: absolute;
     width: 4.5rem;

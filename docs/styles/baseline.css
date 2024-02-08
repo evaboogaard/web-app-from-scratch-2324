@@ -26,6 +26,17 @@
     --hover-box-shadow: 0rem 0rem 0.5rem rgba(255, 240, 197, 0.659);
 }
 
+.sr-only {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 body {
     background-color: var(--primary-color);
     overflow: hidden;

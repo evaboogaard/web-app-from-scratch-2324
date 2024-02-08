@@ -18,14 +18,6 @@ const albumsData = [
     'https://www.theaudiodb.com/api/v1/json/2/album.php?m=2404242',
 ];
 
-// const audioFiles = [
-//     './audio/pinkfloyd.mp3',
-//     './audio/jeffwayne.mp3',
-//     './audio/prodigy.mp3',
-//     './audio/queen.mp3',
-//     './audio/jockstrap.mp3',
-// ];
-
 function updateAlbumTitle(index) {
     const url = albumsData[index];
     fetch(url)
