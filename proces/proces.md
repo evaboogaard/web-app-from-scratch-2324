@@ -73,6 +73,9 @@ Ideeën:
 
 <a name="12feb"/>
 
+-   js carousel naar css scroll-snap carousel. hoofdpijn! maar gelukt.
+-   audio vanuit apple music geprobeerd, was tantoe lelijk, uiteindelijk gekozen voor mp3'tjes die worden ingeladen met controls die worden veranderd als JS actief is bij de gebruiker (door domcontentloaded).
 -   ik weet niet hoe ik de scrollbar weg krijg ???
+-   als er een nummer speelt en je switcht naar een ander album, dan blijft de playing animatie wel maar stopt de muziek, waardoor de toggle niet lekker werkt. wordt ff geparkeerd want geen prio.
 
 ## Maandag 12 feb
