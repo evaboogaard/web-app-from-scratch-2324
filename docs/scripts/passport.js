@@ -8,12 +8,7 @@ const passportButton = document.querySelector('.passport-button');
 const passportContent = document.querySelector('.passport-content');
 
 passportButton.addEventListener('click', () => {
-    passportButton.classList.add('invisible');
-    passportContent.classList.add('visible');
-});
-
-passportContent.addEventListener('click', () => {
-    passportButton.classList.remove('invisible');
+    passportContent.classList.toggle('visible');
 });
 
 /*

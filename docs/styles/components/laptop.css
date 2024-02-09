@@ -1,12 +1,12 @@
 /* LAPTOP BUTTON */
 .laptop-button {
-    background-color: gray;
+    background-color: var(--laptop-color);
     width: 12rem;
     aspect-ratio: 1.5/1;
     position: absolute;
     border-radius: 0.4rem;
     box-shadow:
-        inset -0.4rem -0.3rem 0 rgba(0, 0, 0, 0.242),
+        inset -0.4rem -0.3rem 0 var(--laptop-box-shadow),
         0.2rem -0.2rem 0.3rem rgba(2, 14, 41, 0.459);
     left: 25vw;
     top: 27.5rem;
@@ -54,22 +54,85 @@
 }
 
 .laptop-content.visible {
-    display: block;
+    display: inline-block;
+    width: 27.5rem;
+    left: calc(50% - 13.75rem);
+    top: 25vh;
+    position: relative;
+    perspective: 2400px;
+    perspective-origin: 50% 100%;
+    z-index: 700;
+    filter: drop-shadow(0 0 1rem var(--laptop-box-shadow));
 }
+
+@media (min-width: 800px) {
+    .laptop-content.visible {
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .laptop-content.visible {
+        width: 60rem;
+        left: calc(50% - 30rem);
+        top: 17.5vh;
+    }
+}
+
+.laptop-content .cover {
+    width: 90%;
+    left: 5%;
+    height: 15rem;
+    background-color: rgb(168, 33, 33);
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center bottom;
+    transition: 900ms;
+    animation: laptop-opening 3s forwards;
+    border-radius: 1rem 1rem 0 0;
+    border: 0.75rem solid var(--laptop-color-dark);
+}
+
+@media (min-width: 800px) {
+    .laptop-content .cover {
+        height: 20rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .laptop-content .cover {
+        height: 30em;
+    }
+}
+
+.laptop-content .bottom {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--laptop-color);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.laptop-content .bottom::before {
+    content: '';
+    width: 10%;
+    left: calc(50% - 5%);
+    height: 0.5rem;
+    position: absolute;
+    background-color: var(--laptop-box-shadow);
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* LAPTOP SCREEN */
 
 .laptop-content .screen {
     position: absolute;
     z-index: 300;
-    width: 80vw;
-    aspect-ratio: 1.9/1;
-    left: 10vw;
-    top: 10vh;
+    width: 100%;
+    height: 100%;
+
     background-color: rgb(235, 235, 235);
     overflow: hidden;
-    border-left: 2rem solid black;
-    border-top: 2rem solid black;
-    border-right: 2rem solid black;
-    border-radius: 1rem 1rem 0 0;
 }
 
 .laptop-content .screen .topbar {
@@ -134,87 +197,11 @@
 .laptop-content .screen .projects a img {
     width: 100%;
 }
-/* 
-.mockup {
-    display: inline-block;
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    font-size: 0;
-    perspective: 2400px;
-    perspective-origin: 50% 100%;
-    opacity: 0;
-    transition: 500ms opacity;
+
+.laptop-content .screen .projects a {
+    transition: var(--transition-base);
 }
 
-.mockup.loaded {
-    opacity: 1;
+.laptop-content .screen .projects a:hover {
+    scale: 1.1;
 }
-
-.mockup .part .top,
-.mockup .part .bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.mockup .part.top {
-    transform: translate3d(0, 0, 0) rotateX(0deg);
-    transform: translate3d(0, 0, 0) rotateX(-90deg);
-}
-
-.mockup:hover .part.top {
-    transform: translate3d(0, 0, 0) rotateX(0deg);
-}
-
-.mockup .part {
-    display: inline-block;
-    position: relative;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    transform-origin: 50% 100%;
-    transition: 900ms;
-}
-
-.mockup.opened .part .top {
-    transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
-}
-
-.mockup .part .top {
-    transform-origin: 50% 0;
-    transform: translate3d(0, 0, -11px) rotateX(90deg);
-    transition: 900ms;
-}
-
-.mockup img {
-    display: block;
-    max-width: 100%;
-    backface-visibility: hidden;
-}
-
-.mockup .part .cover {
-    position: relative;
-}
-
-.mockup .laptop-content {
-    display: block;
-    position: absolute;
-    top: 8%;
-    left: 4%;
-    width: 92%;
-    border-radius: 6px;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 1px);
-}
-
-.mockup .part.bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(0, 0, 0) rotateX(-90deg);
-}
-
-.mockup .part .bottom {
-    transform-origin: 50% 0;
-    transform: translate3d(0, 0, 0) rotateX(90deg);
-} */

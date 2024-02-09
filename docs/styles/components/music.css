@@ -1,0 +1,14 @@
+audio {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+@media (min-width: 1400px) {
+    audio {
+        left: 11.5vw;
+        right: auto;
+        top: 75vh;
+        width: 50vh;
+    }
+}

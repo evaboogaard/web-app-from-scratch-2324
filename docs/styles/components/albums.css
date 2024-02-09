@@ -1,177 +1,96 @@
 .albums {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 4rem;
     position: absolute;
-    margin-left: 10%;
 }
 
-.albums .wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 10vw;
-    padding-top: 2rem;
-}
-
-@media (min-width: 800px) {
-    .albums .wrapper {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .albums .wrapper .metadata {
-        transform: translateY(-10rem);
-    }
-}
-
-@media (min-width: 1400px) {
-    .albums .wrapper {
-        flex-direction: row-reverse;
-        align-items: center;
-        align-self: flex-start;
-    }
-
-    .albums .wrapper .metadata {
-        transform: none;
-    }
-}
-
-.albums .controls {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    z-index: 200;
-}
-
-@media (min-width: 800px) {
-    .albums .controls {
-        transform: translate(1.5rem, 35rem);
-    }
-}
-
-@media (min-width: 1400px) {
-    .albums .controls {
-        transform: none;
-    }
-}
-
-.albums .controls button {
-    width: 2rem;
-    height: 2rem;
-    position: relative;
-    transition: var(--transition-base);
-}
-
-.albums .controls button:first-of-type::before,
-.albums .controls button:first-of-type::after,
-.albums .controls button:last-of-type::before,
-.albums .controls button:last-of-type::after {
-    content: '';
-    background-color: black;
-    width: 70%;
-    height: 0.11rem;
+.albums .metadata {
     position: absolute;
-    border-radius: 1rem;
+    left: 18vw;
+    top: 10vh;
+    width: 80vw;
 }
 
-.albums .controls button:first-of-type::before {
-    right: -0.16rem;
-    transform: rotate(45deg);
+@media (min-width: 800px) {
+    .albums .metadata {
+        left: 2vw;
+        top: 12vh;
+    }
 }
 
-.albums .controls button:first-of-type::after {
-    left: -0.16rem;
-    transform: rotate(-45deg);
-}
-
-.albums .controls button:last-of-type::before {
-    right: -0.16rem;
-    transform: rotate(315deg);
-}
-
-.albums .controls button:last-of-type::after {
-    left: -0.16rem;
-    transform: rotate(-315deg);
-}
-
-/* HOVER STATES */
-
-.albums .controls button:first-of-type:hover {
-    transform: translateY(-0.2rem);
-}
-
-.albums .controls button:last-of-type:hover {
-    transform: translateY(0.2rem);
+@media (min-width: 1400px) {
+    .albums .metadata {
+        left: 11.5vw;
+        top: 12vh;
+    }
 }
 
 .albums ul {
-    display: none;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100vw;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 10vh;
+    left: 2vw;
+    scroll-snap-type: x mandatory;
+    margin-left: -45vw;
+    top: 8vh;
+}
+
+.albums ul li {
+    scroll-snap-align: center;
+    width: 50vw;
+    margin-right: 100vw;
+}
+
+.albums ul li:first-of-type {
+    margin-left: 50vw;
+}
+
+.albums ul li img {
+    height: 100%;
+    aspect-ratio: 1;
+    margin: 0 0 0 0;
+    object-fit: cover;
 }
 
 @media (min-width: 800px) {
     .albums ul {
-        overflow: hidden;
-        height: 100vh;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 25vh;
-        top: 0;
-        left: -20vh;
-        position: absolute;
-        transition: scroll 0.5s ease-in-out;
+        width: 30vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100vh;
+        left: 0;
+        scroll-snap-type: y mandatory;
+        top: 20vh;
+        margin-left: 0;
     }
 
     .albums ul li {
-        height: 50vh;
+        scroll-snap-align: start;
+        margin: 50vh 0 50vh 0;
+        width: 30vw;
     }
 
     .albums ul li:first-of-type {
-        margin-top: 25vh;
+        margin-left: 0;
     }
 
-    .albums ul li:last-of-type {
-        margin-bottom: 25vh;
+    .albums ul li img {
+        width: 90%;
+        height: auto;
+        margin: 0 0 25vh 5%;
     }
 }
 
 @media (min-width: 1400px) {
     .albums ul {
-        overflow: hidden;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        left: 0;
-        gap: 30vh;
-        transition: scroll 0.5s ease-in-out;
-    }
-
-    .albums ul li {
-        height: 50vh;
-    }
-}
-
-.albums ul img {
-    display: none;
-}
-
-@media (min-width: 800px) {
-    .albums ul img {
-        display: block;
-        width: 50vh;
-        margin-top: 2.5vh;
-        border-radius: 0.5rem;
-        aspect-ratio: 1;
-        object-fit: cover;
-        transform: scale(0.5);
-    }
-}
-
-@media (min-width: 1400px) {
-    .albums ul img {
-        width: 50vh;
-        transform: scale(1);
+        width: 50vw;
+        left: 10vw;
     }
 }

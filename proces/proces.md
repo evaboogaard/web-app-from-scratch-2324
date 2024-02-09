@@ -39,13 +39,13 @@ Ideeën:
 
 ## Woensdag 7 feb
 
--   Ik heb een paspoortje toegevoegd aan de tafel, als je erop klikt komt de content in beeld. Ik zat nogal te struggelen met hoe ik dit in een soort paspoort layout moest krijgen, want ik wilde eigenlijk een ul met li items gebruiken. Dit kreeg ik echter met geen mogelijkheid goed voor elkaar, dus heb ik alles toch omgegooid naar div’jes en heb ik 2 sections gemaakt waarvan de parent een display: flex kreeg.
+-   ik heb een paspoortje toegevoegd aan de tafel, als je erop klikt komt de content in beeld. Ik zat nogal te struggelen met hoe ik dit in een soort paspoort layout moest krijgen, want ik wilde eigenlijk een ul met li items gebruiken. Dit kreeg ik echter met geen mogelijkheid goed voor elkaar, dus heb ik alles toch omgegooid naar div’jes en heb ik 2 sections gemaakt waarvan de parent een display: flex kreeg.
 
 ![](./img/3/code.png)
 ![](./img/3/code-2.png)
 ![](./img/3/code-3.png)
 
--   Ik heb mijn concept nog een keer nagelopen en nog een soort final sketch gemaakt:
+-   ik heb mijn concept nog een keer nagelopen en nog een soort final sketch gemaakt:
 
 ![](./img/3/note.JPG)
 
@@ -54,8 +54,7 @@ Ideeën:
 ## Donderdag 8 feb
 
 -   weeklynerd notebook btn gemaakt (toch geen landkaart want i have a life)
--   oke ik ga gillen want het is niet responsive en het aanpassen van de api data werkt niet meer als ik de images kleiner maak dus ik moet ff opnieuw beginnen ofzo maar ik heb geen motivatie meer
--   het is 2 uur later en het is gelukt!!! ik deed het dus eerst zo op basis van de scrollposition, maar dat werkte niet meer als de items kleiner werden (duh). nu voeg ik dus de ‘active’ class toe op basis van de clicks op de up- en down buttons. hier checkt hij dus elke keer als er geklikt wordt wat de currentActiveIndex moet worden.
+-   het aanpassen van de api data werkt niet meer als ik de images kleiner maak dus ik moet ff opnieuw beginnen. ik deed het dus eerst zo op basis van de scrollposition, maar dat werkte niet meer als de items kleiner werden (duh). nu voeg ik dus de ‘active’ class toe op basis van de clicks op de up- en down buttons. hier checkt hij dus elke keer als er geklikt wordt wat de currentActiveIndex moet worden.
 
 ![](./img/4/code-1.png)
 ![](./img/4/code-2.png)
@@ -64,7 +63,7 @@ Ideeën:
 
 ![](./img/4/code-3.png)
 
--   Dit is hoe de site er aan het einde van de dag uit ziet. Ik vind de kleuren echt intens lelijk en ben ook nog niet tevreden over de hele layout maar hey, we zijn ergens.
+-   einde vd dag progress
 
 ![](./img/4/code-4.png)
 
@@ -73,5 +72,7 @@ Ideeën:
 ## Vrijdag 9 feb
 
 <a name="12feb"/>
+
+-   ik weet niet hoe ik de scrollbar weg krijg ???
 
 ## Maandag 12 feb

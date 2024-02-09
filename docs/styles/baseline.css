@@ -5,13 +5,17 @@
 }
 
 :root {
-    --primary-color: #f4c900;
+    --primary-color: #c2c2c2;
 
     --wood-color: #4a3516;
 
     --passport-color: #8b1414;
     --passport-color-dark: #640d0d;
     --passport-color-text: #f4c900;
+
+    --laptop-color: #808080;
+    --laptop-color-dark: #747474;
+    --laptop-box-shadow: #0000003e;
 
     --record-player-color: #5d5c5e;
     --record-player-light-color: #9f9fa1;
@@ -40,6 +44,8 @@
 body {
     background-color: var(--primary-color);
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 button {

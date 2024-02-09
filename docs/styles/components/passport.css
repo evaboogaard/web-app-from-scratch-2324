@@ -41,7 +41,6 @@
 /* PASSPORT CONTENT */
 
 .passport-content {
-    /* display: none; */
     z-index: 1000;
     position: absolute;
     background-color: white;
@@ -72,7 +71,6 @@
 }
 
 .passport-content.visible {
-    /* display: block; */
     transform: none;
 }
 

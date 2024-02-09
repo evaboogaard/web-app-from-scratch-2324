@@ -24,9 +24,16 @@
     border-radius: 50%;
     top: 1rem;
     left: 1.5rem;
-    background-color: black;
     box-shadow: var(--record-player-box-shadow);
     transition: var(--transition-base);
+    background-image: linear-gradient(
+        45deg,
+        #000 0%,
+        #000 30%,
+        rgb(33, 33, 33) 50%,
+        #000 70%,
+        #000 100%
+    );
 }
 
 .recordplayer .vinyl:hover {
@@ -126,19 +133,9 @@
     gap: 0.25rem;
 }
 
-.recordplayer fieldset .button-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 .recordplayer fieldset label {
     font-size: 0.5rem;
     color: var(--notebook-color);
-}
-
-#33[type='radio']:checked + label {
-    background-color: coral;
 }
 
 /*
@@ -151,6 +148,14 @@
     animation: record-arm-playing 120s;
 }
 
-.recordplayer.playing .vinyl {
-    animation: vinyl-record-playing 8s infinite linear 2s;
+body:has(input#one[type='radio']:checked) .recordplayer.playing .vinyl {
+    animation: vinyl-record-playing 8s infinite linear;
+}
+
+body:has(input#two[type='radio']:checked) .recordplayer.playing .vinyl {
+    animation: vinyl-record-playing 5s infinite linear;
+}
+
+body:has(input#three[type='radio']:checked) .recordplayer.playing .vinyl {
+    animation: vinyl-record-playing 2s infinite linear;
 }

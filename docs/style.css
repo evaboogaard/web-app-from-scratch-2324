@@ -1,6 +1,8 @@
 @import './styles/baseline.css';
 @import './styles/animations.css';
 @import './styles/components/albums.css';
+@import './styles/components/music.css';
+
 @import './styles/components/passport.css';
 @import './styles/components/laptop.css';
 @import './styles/components/table.css';
