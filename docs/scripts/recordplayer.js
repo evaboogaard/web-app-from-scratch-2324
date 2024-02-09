@@ -1,6 +1,7 @@
 const recordPlayerEl = document.querySelector('.recordplayer');
 const recordButtonEl = document.querySelector('.vinyl');
 const audio = document.querySelector('audio');
+const speedInputs = document.querySelectorAll('input[name="speed"]');
 
 document.addEventListener('DOMContentLoaded', () => {
     audio.removeAttribute('controls');
@@ -9,10 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
 recordButtonEl.addEventListener('click', () => {
     recordPlayerEl.classList.toggle('playing');
 
-    // Check the second radio input
     document.getElementById('two').checked = true;
 
-    // Ensure audio playback starts
     if (audio.paused) {
         audio.play().catch((error) => {
             console.error('Failed to play audio:', error);
@@ -20,4 +19,19 @@ recordButtonEl.addEventListener('click', () => {
     } else {
         audio.pause();
     }
+});
+
+speedInputs.forEach((input) => {
+    input.addEventListener('change', () => {
+        if (input.checked) {
+            if (input.value === 'one') {
+                audio.playbackRate = 0.6;
+            }
+            if (input.value === 'three') {
+                audio.playbackRate = 1.4;
+            } else {
+                audio.playbackRate = 1;
+            }
+        }
+    });
 });
