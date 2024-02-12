@@ -13,7 +13,12 @@
     box-shadow: -0.2rem 0.2rem 0.3rem rgba(2, 14, 41, 0.459);
     color: var(--passport-color-text);
     font-size: 0.5rem;
-    transition: var(--transition-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .passport-button {
+        transition: var(--transition-base);
+    }
 }
 
 .passport.content-shown .passport-button {
@@ -57,8 +62,13 @@
     outline: 1rem solid var(--passport-color);
     overflow: scroll;
     transform: translateY(100vh);
-    transition: 1s ease-out;
     text-align: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .passport-content {
+        transition: 1s ease-out;
+    }
 }
 
 .passport.content-shown .passport-content {
@@ -173,10 +183,12 @@
     }
 }
 
-.passport.content-shown .passport-content #e1 path,
-.passport.content-shown .passport-content #e2 path,
-.passport.content-shown .passport-content #e3 path,
-.passport.content-shown .passport-content #va path {
-    animation: draw 5s ease forwards;
-    animation-delay: 0.5s;
+@media (prefers-reduced-motion: no-preference) {
+    .passport.content-shown .passport-content #e1 path,
+    .passport.content-shown .passport-content #e2 path,
+    .passport.content-shown .passport-content #e3 path,
+    .passport.content-shown .passport-content #va path {
+        animation: draw 5s ease forwards;
+        animation-delay: 0.5s;
+    }
 }

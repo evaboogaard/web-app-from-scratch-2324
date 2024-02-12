@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: #ededed;
-    --secondary-color: #dfdfdf;
+    --primary-color: #d4d4d4;
+    --secondary-color: #eeeeee;
 
     --wood-color: #4a3516;
 
@@ -43,26 +43,16 @@
 }
 
 body {
-    background-image: repeating-linear-gradient(
-            45deg,
-            var(--primary-color) 25%,
-            transparent 25%,
-            transparent 75%,
-            var(--primary-color) 75%,
-            var(--primary-color)
+    background-color: var(--primary-color);
+    background-image: repeating-radial-gradient(
+            circle at 0 0,
+            transparent 0,
+            var(--primary-color) 10px
         ),
         repeating-linear-gradient(
-            45deg,
-            var(--primary-color) 25%,
-            var(--secondary-color) 25%,
-            var(--secondary-color) 75%,
-            var(--primary-color) 75%,
-            var(--primary-color)
+            var(--secondary-color),
+            var(--secondary-color)
         );
-    background-position:
-        0 0,
-        10px 10px;
-    background-size: 20px 20px;
     overflow: hidden;
     width: 100vw;
     height: 100vh;

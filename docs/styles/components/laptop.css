@@ -11,7 +11,12 @@
     left: 25vw;
     top: 27.5rem;
     transform: rotate(200deg) translateY(0);
-    transition: var(--transition-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .laptop-button {
+        transition: var(--transition-base);
+    }
 }
 
 .laptop.content-visible .laptop-button {
@@ -64,7 +69,12 @@
     perspective-origin: 50% 100%;
     z-index: 700;
     filter: drop-shadow(0 0 1rem var(--laptop-box-shadow));
-    transition: var(--transition-base);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .laptop-content {
+        transition: var(--transition-base);
+    }
 }
 
 .laptop.content-visible .laptop-content {
@@ -94,10 +104,15 @@
     position: relative;
     transform-style: preserve-3d;
     transform-origin: center bottom;
-    transition: 900ms;
-    animation: laptop-opening 3s forwards;
     border-radius: 1rem 1rem 0 0;
     border: 0.75rem solid var(--laptop-color-dark);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .laptop-content .cover {
+        transition: 900ms;
+        animation: laptop-opening 3s forwards;
+    }
 }
 
 @media (min-width: 800px) {
@@ -204,8 +219,10 @@
     width: 100%;
 }
 
-.laptop-content .screen .projects a {
-    transition: var(--transition-base);
+@media (prefers-reduced-motion: no-preference) {
+    .laptop-content .screen .projects a {
+        transition: var(--transition-base);
+    }
 }
 
 .laptop-content .screen .projects a:hover {
