@@ -17,7 +17,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .passport-button {
-        transition: var(--transition-base);
+        transition: var(--transition-long);
     }
 }
 
@@ -67,7 +67,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .passport-content {
-        transition: 1s ease-out;
+        transition: var(--transition-long);
     }
 }
 

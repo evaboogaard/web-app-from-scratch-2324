@@ -1,0 +1,37 @@
+{
+    "avatar_url": "https://evaboogaard.github.io/web-app-from-scratch-2324/img/paspoort_1.jpg",
+    "firstName": "Eva",
+    "lastName": "Boogaard",
+    "age": 24,
+    "city": "Amsterdam",
+    "hobbies": ["Concerts", "Raving", "Cooking", "Cinema"],
+    "truthsAndLies": [
+        "I was an exchange student in Berlin",
+        "I've had a cinema subscription since 2017",
+        "I currently live on Wibautstraat with one of my friends"
+    ],
+    "bio": "Simply trying her best while violently ignoring the raging debt she has earned by being part of the pechgeneratie.",
+    "favoritePokemon": "Piplup",
+    "favoritePokemonAvatar": "https",
+    "stats": [
+        { "title": "HTML", "value": 60 },
+        { "title": "CSS", "value": 80 },
+        { "title": "JavaScript", "value": 30 },
+        { "title": "Design", "value": 75 },
+        { "title": "Git", "value": 30 }
+    ],
+    "strengths": ["Creativity", "Adaptability", "Passionate"],
+    "weaknesses": ["Too direct", "Stressed", "Conflict avoidant"],
+    "habitat": [
+        { "title": "Home", "value": "Amsterdam ZO" },
+        { "title": "GitHub", "value": "https://github.com/evaboogaard" },
+        {
+            "title": "LinkedIn",
+            "value": "https://www.linkedin.com/in/eva-boogaard-219791174/"
+        },
+        {
+            "title": "Instagram",
+            "value": "https://www.instagram.com/evaboogaard"
+        }
+    ]
+}

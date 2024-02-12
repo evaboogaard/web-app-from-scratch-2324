@@ -15,7 +15,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .laptop-button {
-        transition: var(--transition-base);
+        transition: var(--transition-long);
     }
 }
 
@@ -73,7 +73,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .laptop-content {
-        transition: var(--transition-base);
+        transition: var(--transition-long);
     }
 }
 
@@ -109,8 +109,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .laptop-content .cover {
-        transition: 900ms;
+    .laptop.content-visible .laptop-content .cover {
+        transition: var(--transition-base);
         animation: laptop-opening 3s forwards;
     }
 }

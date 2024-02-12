@@ -104,3 +104,9 @@ Ideeën:
 <a name="12feb"/>
 
 ## Maandag 12 feb
+
+-   ik wilde een soort navbar maken voor accessibility alleen dit zorgde ervoor dat de hele pagina versprong, kreeg het niet gefikst dus heb alle album covers in een button gegooid waardoor je er nu wel doorheen kunt tabben
+
+![](./img/6/code.png)
+![](./img/6/code-2.png)
+![](./img/6/code-3.png)

@@ -27,6 +27,7 @@
     --notebook-side-color: gray;
 
     --transition-base: 0.5s ease-out;
+    --transition-long: 1.5s ease-out;
 
     --hover-box-shadow: 0rem 0rem 0.5rem rgba(255, 240, 197, 0.659);
 }
@@ -89,9 +90,9 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible {
     border: none;
-    outline: 3px dotted white;
+    outline: 3px dotted black;
 }
 
 button:focus-visible img {
-    outline: 3px dotted white;
+    outline: 3px dotted black;
 }

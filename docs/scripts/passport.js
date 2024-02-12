@@ -24,7 +24,7 @@ passportContent.addEventListener('click', () => {
 
 const evaData =
     // 'https://evaboogaard.github.io/web-app-from-scratch-2324/me.json';
-    'me.json';
+    'info.json';
 const avatarEl = document.querySelector('.avatar');
 const nameEl = document.querySelector('.name');
 const ageEl = document.querySelector('.age');
@@ -41,10 +41,10 @@ fetch(evaData)
         return response.json();
     })
     .then((data) => {
-        avatarEl.src = data.avatar;
-        nameEl.innerHTML = data.name;
+        avatarEl.src = data.avatar_url;
+        nameEl.innerHTML = data.firstName + ' ' + data.lastName;
         ageEl.innerHTML = data.age;
-        personalityEl.innerHTML = data.description;
+        personalityEl.innerHTML = data.bio;
         strengthsEl.innerHTML = data.strengths;
         weaknessesEl.innerHTML = data.weaknesses;
         habitatEl.innerHTML = data.habitat[0].value;
