@@ -10,8 +10,12 @@
         0.2rem -0.2rem 0.3rem rgba(2, 14, 41, 0.459);
     left: 25vw;
     top: 27.5rem;
-    transform: rotate(200deg);
+    transform: rotate(200deg) translateY(0);
     transition: var(--transition-base);
+}
+
+.laptop.content-visible .laptop-button {
+    transform: rotate(200deg) translateY(-100vh);
 }
 
 @media (min-width: 800px) {
@@ -50,30 +54,32 @@
 /* LAPTOP CONTENT */
 
 .laptop-content {
-    display: none;
-}
-
-.laptop-content.visible {
     display: inline-block;
+    transform: translateY(100vh);
     width: 27.5rem;
     left: calc(50% - 13.75rem);
     top: 25vh;
-    position: relative;
+    position: fixed;
     perspective: 2400px;
     perspective-origin: 50% 100%;
     z-index: 700;
     filter: drop-shadow(0 0 1rem var(--laptop-box-shadow));
+    transition: var(--transition-base);
+}
+
+.laptop.content-visible .laptop-content {
+    transform: translateY(0);
 }
 
 @media (min-width: 800px) {
-    .laptop-content.visible {
+    .laptop-content {
         width: 40rem;
         left: calc(50% - 20rem);
     }
 }
 
 @media (min-width: 1400px) {
-    .laptop-content.visible {
+    .laptop-content {
         width: 60rem;
         left: calc(50% - 30rem);
         top: 17.5vh;
@@ -102,7 +108,7 @@
 
 @media (min-width: 1400px) {
     .laptop-content .cover {
-        height: 30em;
+        height: 37em;
     }
 }
 

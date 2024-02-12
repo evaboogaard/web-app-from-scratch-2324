@@ -5,7 +5,8 @@
 }
 
 :root {
-    --primary-color: #c2c2c2;
+    --primary-color: #ededed;
+    --secondary-color: #dfdfdf;
 
     --wood-color: #4a3516;
 
@@ -42,10 +43,30 @@
 }
 
 body {
-    background-color: var(--primary-color);
+    background-image: repeating-linear-gradient(
+            45deg,
+            var(--primary-color) 25%,
+            transparent 25%,
+            transparent 75%,
+            var(--primary-color) 75%,
+            var(--primary-color)
+        ),
+        repeating-linear-gradient(
+            45deg,
+            var(--primary-color) 25%,
+            var(--secondary-color) 25%,
+            var(--secondary-color) 75%,
+            var(--primary-color) 75%,
+            var(--primary-color)
+        );
+    background-position:
+        0 0,
+        10px 10px;
+    background-size: 20px 20px;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 button {
@@ -72,4 +93,15 @@ li,
 button,
 label {
     font-family: monospace;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    border: none;
+    outline: 3px dotted white;
+}
+
+button:focus-visible img {
+    outline: 3px dotted white;
 }

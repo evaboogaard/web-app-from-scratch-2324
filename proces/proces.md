@@ -71,11 +71,36 @@ Ideeën:
 
 ## Vrijdag 9 feb
 
-<a name="12feb"/>
+-   wilde de radio buttons de speed of sound laten veranderen maar dat lukte niet. uiteindelijk was het probleem niet zo ingewikkeld en moest ik mijn id names veranderen en een beetje klooien met selectors. opvallend is wel dat chatgpt dit niet doorhad en zei dat ik prima een nummer als id kon gebruiken (was niet zo)
 
--   js carousel naar css scroll-snap carousel. hoofdpijn! maar gelukt.
+![](./img/5/code.png)
+![](./img/5/code-1.png)
+![](./img/5/code-2.png)
+![](./img/5/code-3.png)
+![](./img/5/code-4.png)
+![](./img/5/code-5.png)
+![](./img/5/gpt.png)
+
 -   audio vanuit apple music geprobeerd, was tantoe lelijk, uiteindelijk gekozen voor mp3'tjes die worden ingeladen met controls die worden veranderd als JS actief is bij de gebruiker (door domcontentloaded).
--   ik weet niet hoe ik de scrollbar weg krijg ???
--   als er een nummer speelt en je switcht naar een ander album, dan blijft de playing animatie wel maar stopt de muziek, waardoor de toggle niet lekker werkt. wordt ff geparkeerd want geen prio.
+    ![](./img/5/code-6.png)
+    ![](./img/5/code-7.png)
+
+-   kreeg opeens vet veel errors in console, lag aan een regel in mn script
+    ![](./img/5/code-8.png)
+    ![](./img/5/code-9.png)
+
+-   ik wil dat als er geen JS actief is bij de gebruiker, de controls van de audio zichtbaar zijn, en als er wel JS te gebruiken is dat er dan custom controls zijn
+
+-   js carousel naar css scroll-snap carousel. snapte er geen hol van maar het is gelukt alleen nog niet met pijltjes die klikbaar zijn dus het is niet toegankelijk. NOG niet toegankelijk.
+
+![](./img/5/code-10.png)
+![](./img/5/code-11.png)
+![](./img/5/code-12.png)
+![](./img/5/code-13.png)
+![](./img/5/code-14.png)
+
+-   als er een nummer speelt en je switcht naar een ander album, dan blijft de playing animatie wel maar stopt de muziek, waardoor de toggle niet lekker werkt. wordt ff geparkeerd want geen prio. net als de scrollbar die niet weg wil.
+
+<a name="12feb"/>
 
 ## Maandag 12 feb

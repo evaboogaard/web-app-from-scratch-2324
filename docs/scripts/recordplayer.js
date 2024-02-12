@@ -1,5 +1,6 @@
 const recordPlayerEl = document.querySelector('.recordplayer');
 const recordButtonEl = document.querySelector('.vinyl');
+const albumButtonEl = document.querySelectorAll('.albums button');
 const audio = document.querySelector('audio');
 const speedInputs = document.querySelectorAll('input[name="speed"]');
 const vinylCrackingAudio = new Audio('./audio/vinyl.mp3');
@@ -24,6 +25,23 @@ recordButtonEl.addEventListener('click', () => {
         vinylCrackingAudio.pause();
         audio.pause();
     }
+});
+
+albumButtonEl.forEach((button) => {
+    button.addEventListener('click', () => {
+        recordPlayerEl.classList.toggle('playing');
+        document.getElementById('two').checked = true;
+
+        if (audio.paused) {
+            vinylCrackingAudio.play();
+            setTimeout(() => {
+                audio.play();
+            }, 2000);
+        } else {
+            vinylCrackingAudio.pause();
+            audio.pause();
+        }
+    });
 });
 
 speedInputs.forEach((input) => {

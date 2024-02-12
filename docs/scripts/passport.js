@@ -4,11 +4,16 @@
 ###############
 */
 
+const passportEl = document.querySelector('.passport');
 const passportButton = document.querySelector('.passport-button');
 const passportContent = document.querySelector('.passport-content');
 
 passportButton.addEventListener('click', () => {
-    passportContent.classList.toggle('visible');
+    passportEl.classList.add('content-shown');
+});
+
+passportContent.addEventListener('click', () => {
+    passportEl.classList.remove('content-shown');
 });
 
 /*

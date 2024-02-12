@@ -50,6 +50,9 @@
 .albums ul li:first-of-type {
     margin-left: 50vw;
 }
+.albums ul li button {
+    height: 100%;
+}
 
 .albums ul li img {
     height: 100%;
