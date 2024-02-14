@@ -17,14 +17,22 @@
         var(--record-player-box-shadow);
 }
 
-.recordplayer .vinyl {
+.recordplayer .vinyl-spin-wrapper {
     position: absolute;
-    height: 13rem;
     aspect-ratio: 1;
     border-radius: 50%;
     top: 1rem;
     left: 1.5rem;
+    height: 13rem;
+}
+
+.recordplayer .vinyl {
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: vinyl-play-small 2s forwards ease-in-out 1s;
     box-shadow: var(--record-player-box-shadow);
+    height: 13rem;
     background-image: linear-gradient(
         45deg,
         #000 0%,
@@ -33,6 +41,87 @@
         #000 70%,
         #000 100%
     );
+}
+
+@media (min-width: 800px) {
+    .recordplayer .vinyl {
+        animation: vinyl-play-medium 2s forwards ease-in-out 1s;
+    }
+}
+
+@media (min-width: 1400px) {
+    .recordplayer .vinyl {
+        animation: vinyl-play-large 2s forwards ease-in-out 1s;
+    }
+}
+
+@keyframes vinyl-play-small {
+    0% {
+        top: -16rem;
+        left: -10rem;
+        filter: brightness(2);
+        scale: 0.3;
+    }
+
+    50% {
+        top: -16rem;
+        left: 1.5rem;
+        filter: brightness(2);
+        scale: 0.3;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        filter: brightness(1);
+        scale: 1;
+    }
+}
+
+@keyframes vinyl-play-medium {
+    0% {
+        top: -5.5rem;
+        left: -22rem;
+        filter: brightness(2);
+        scale: 0.8;
+    }
+
+    50% {
+        top: -5.5rem;
+        left: 1.5rem;
+        filter: brightness(2);
+        scale: 0.8;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        filter: brightness(1);
+        scale: 1;
+    }
+}
+
+@keyframes vinyl-play-large {
+    0% {
+        top: 0;
+        left: -41.5rem;
+        filter: brightness(2);
+        scale: 1.7;
+    }
+
+    50% {
+        top: 0;
+        left: -8rem;
+        filter: brightness(2);
+        scale: 1.7;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        filter: brightness(1);
+        scale: 1;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -155,14 +244,20 @@
     }
 }
 
-body:has(input#one[type='radio']:checked) .recordplayer.playing .vinyl {
+body:has(input#one[type='radio']:checked)
+    .recordplayer.playing
+    .vinyl-spin-wrapper {
     animation: vinyl-record-playing 8s infinite linear;
 }
 
-body:has(input#two[type='radio']:checked) .recordplayer.playing .vinyl {
+body:has(input#two[type='radio']:checked)
+    .recordplayer.playing
+    .vinyl-spin-wrapper {
     animation: vinyl-record-playing 5s infinite linear;
 }
 
-body:has(input#three[type='radio']:checked) .recordplayer.playing .vinyl {
+body:has(input#three[type='radio']:checked)
+    .recordplayer.playing
+    .vinyl-spin-wrapper {
     animation: vinyl-record-playing 2s infinite linear;
 }

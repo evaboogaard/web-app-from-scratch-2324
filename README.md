@@ -1,28 +1,22 @@
 # Web App From Scratch @cmda-minor-web 2023 - 2024
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+Welcome to my WAFS project for the minor Web Design & Development :)
 
-<!-- ☝️ replace this description with a description of your own work -->
+## Link
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+Here you can find the website https://evaboogaard.github.io/web-app-from-scratch-2324/
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+![](./proces/result.png)
 
-<!-- Maybe a table of contents here? 📚 -->
+## Data
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+For this project I used an API to fetch external data. The API I used is https://www.theaudiodb.com/
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+Here I got the album covers, titles and artist info.
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+## Wiki
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
-
-## Proces WAFS
-
-Welkom!!! Bij dit prachtige procesboek!!!!!!!! Let's dive right in :)
+Welcome! To this beautiful wiki!!!!!!!! Let's dive right in :)
 
 ### Table of Contents
 
@@ -32,6 +26,8 @@ Welkom!!! Bij dit prachtige procesboek!!!!!!!! Let's dive right in :)
 [Donderdag 8 feb](#8feb)  
 [Vrijdag 9 feb](#9feb)  
 [Maandag 12 feb](#12feb)
+[Dinsdag 13 feb](#13feb)
+[Woensdag 14 feb](#14feb)
 
 <a name="5feb"/>
 
@@ -132,6 +128,25 @@ Ideeën:
 ![](./proces/img/6/code.png)
 ![](./proces/img/6/code-2.png)
 ![](./proces/img/6/code-3.png)
+
+<a name="13feb"/>
+
+#### Dinsdag 13 feb
+
+-   Vandaag heb ik enkel aan de team app gewerkt.
+
+<a name="14feb"/>
+
+#### Woensdag 14 feb
+
+-   Op verzoek van docent heb ik de animatie van de platenspeler duidelijker gemaakt. Dit was lastig omdat ik een soort wrapper moest maken voor het vinyl (omdat ik geen 2 animaties door elkaar heen kon gebruiken op hetzelfde object) waardoor alles een soort van stuk ging, en rekening moest houden met responsiveness. For some reason was ook het middenstukje waar de artiest opstaat insane lastig om mee te scalen, waardoor ik ipv width een transform: scale heb toegepast in de animatie. Ik heb het nog aan chatGPT gevraagd maar die kwam met een achterlijke oplossing die ik niet gebruikt heb.
+
+![](./proces/img/7/code.png)
+![](./proces/img/7/code-2.png)
+![](./proces/img/7/code-3.png)
+![](./proces/img/7/code-4.png)
+![](./proces/img/7/code-5.png)
+![](./proces/img/7/code-6.png)
 
 ## Source List
 
