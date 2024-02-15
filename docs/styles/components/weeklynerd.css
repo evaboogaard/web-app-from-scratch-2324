@@ -54,7 +54,7 @@
     display: block;
     position: fixed;
     top: 2rem;
-    z-index: 5000;
+    z-index: 12000;
     left: 5vw;
     width: 90vw;
     height: 92vh;
@@ -64,6 +64,7 @@
     background-size: 13px 13px;
     border-radius: 1rem;
     box-shadow: 0 0 2rem black;
+    overflow-y: scroll;
 }
 
 @media (min-width: 800px) {
@@ -80,10 +81,8 @@
     }
 }
 
-.weeklynerd-content .week-1 {
-    overflow-y: scroll;
-    height: 80vh;
-    padding-bottom: 10vh;
+.weeklynerd-content > section {
+    padding: 2rem 0 2rem 0;
 }
 
 .weeklynerd-content ul {
